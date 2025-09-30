@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Sheet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1><span style="background-color: coral; color: #ffffff; padding: 6px; border-radius: 9px;">Class</span> Attendance</h1>
+        <div class="attendance-container">
+            <!-- Student List -->
+            <ol class="student-list student-list-1">
+                <!-- <li><label><input type="checkbox" class="attendance" value="Vikas"> Vikas</label></li>
+                <li><label><input type="checkbox" class="attendance" value="Rohit"> Rohit</label></li>
+                <li><label><input type="checkbox" class="attendance" value="Anjali"> Anjali</label></li>
+                <li><label><input type="checkbox" class="attendance" value="Priya"> Priya</label></li>
+                <li><label><input type="checkbox" class="attendance" value="Amit"> Amit</label></li> -->
+
+
+
+                <li class="student">
+                    <label for="Vikas">Vikas</label>
+                    <input type="checkbox" class="attendance" value="Vikas">
+                </li>
+                <li class="student">
+                    <label for="Rohit">Rohit</label>
+                    <input type="checkbox" class="attendance" value="Rohit">
+                </li>
+                <li class="student">
+                    <label for="Anjali">Anjali</label>
+                    <input type="checkbox" class="attendance" value="Anjali">
+                </li>
+                <li class="student">
+                    <label for="Priya">Priya</label>
+                    <input type="checkbox" class="attendance" value="Priya">
+                </li>
+                <li class="student">
+                    <label for="Amit">Amit</label>
+                    <input type="checkbox" class="attendance" value="Amit">
+                </li>
+            </ol>
+
+            <!-- Date Selection -->
+            <div class="date">
+                <label for="attendanceDate">Select Date:</label><br>
+                <input type="date" id="attendanceDate" name="attendanceDate">
+            </div>
+
+            <!-- Add Button -->
+            <div class="btn-1">
+                <input type="button" value="Add Attendance" id="submitBtn" class="btn">
+            </div>
+
+            <!-- Results -->
+            <h2>Attendance Records</h2>
+            <div id="resultBox"></div>
+
+            <!-- Overall Total -->
+            <div id="overallTotal">Overall Total Present: 0</div>
+        </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

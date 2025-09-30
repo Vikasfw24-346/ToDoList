@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+.attendance-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #c2a2a2;
+    border-radius: 8px;
+    background: #cec9c9;
+}
+
+.student-list {
+    max-width: 600px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.student-list-1 {
+    list-style: none;
+    /* remove default bullets */
+    counter-reset: student-counter;
+}
+
+.student-list-1 li {
+    counter-increment: student-counter;
+    margin: 5px 0;
+    padding: 5px;
+}
+
+.student-list-1 li::before {
+    content: counter(student-counter) ". ";
+    font-weight: bold;
+    color: #333;
+}
+
+.student-list li {
+    margin: 5px 0;
+}
+
+.student{
+    display: grid;
+    grid-template-columns: .2fr 4fr .5fr;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+input[type="date"] {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+.date{
+    margin-top: 20px;
+}
+.btn {
+    margin-top: 10px;
+    padding: 15px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+}
+.btn:hover{
+    background-color: #fff;
+    color: #333;
+}
+
+
+
+#submitBtn {
+    background-color: silver;
+}
+
+.record {
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+#overallTotal {
+    font-weight: bold;
+    margin-top: 15px;
+    padding: 10px;
+    background: tomato;
+    border: 1px solid #7793c1;
+    border-radius: 5px;
+}
