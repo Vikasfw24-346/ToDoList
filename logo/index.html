@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attendance App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1><span style="background-color: lab(67.29% 45.36 47.49); color: #fff; padding: 6px; border-radius: 9px;">Class</span> Attendance</h1>
+
+    <!-- Date -->
+    <div class="date">
+      <label for="attendanceDate">Select Date</label>
+      <input type="date" id="attendanceDate">
+    </div>
+
+    <!-- Add Student -->
+    <h3 class="highlight">Add Student Names</h3>
+    <div class="input-container">
+      <input type="text" placeholder="Enter student name..." id="inputBox">
+      <!-- <button id="addBtn">Add</button> -->
+      <input type="button" value="Add" id="addBtn">
+    </div>
+
+    <!-- Student List -->
+    <ul id="todoList"></ul>
+
+    <!-- Submit -->
+    <button id="submitBtn">Submit Attendance</button>
+
+    <!-- Results -->
+    <h2>Attendance Records</h2>
+    <div id="results"></div>
+    <h2 id="overallTotal">Overall Total Students: 0</h2>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
