@@ -1,19 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Attendance App</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <div class="container">
-    <h1><span style="background-color: lab(67.29% 45.36 47.49); color: #fff; padding: 6px; border-radius: 9px;">Class</span> Attendance</h1>
+    <h1><span
+        style="background-color: lab(67.29% 45.36 47.49); color: #fff; padding: 6px; border-radius: 9px;">Class</span>
+      Attendance</h1>
 
     <!-- Date -->
     <div class="date">
-      <label for="attendanceDate">Select Date</label>
-      <input type="date" id="attendanceDate">
+      <!-- <label for="attendanceDate">Select Date</label>
+      <input type="date" id="attendanceDate"> -->
+
+
+      <label for="date">Choose a date:</label>
+      <select name="date" id="attendanceDate">
+        <option class="dates" value="1">1</option>
+        <option class="dates" value="2">2</option>
+        <option class="dates" value="3">3</option>
+        <option class="dates" value="4">4</option>
+        <option class="dates" value="5">5</option>
+      </select>
     </div>
 
     <!-- Add Student -->
@@ -38,4 +52,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>
