@@ -32,11 +32,13 @@ input[type="date"] {
 .date {
   margin-top: 20px;
 }
-.dates{
+
+.dates {
   border: none;
   border-radius: 10px;
   padding: 7px;
 }
+
 .date,
 label {
   font-weight: 500;
@@ -99,8 +101,7 @@ ul li {
   align-items: center;
 }
 
-#submitBtn {
-
+#viewBtn {
   margin: 20px 0;
   padding: 10px 20px;
   background: navy;
@@ -111,7 +112,30 @@ ul li {
   border-radius: 8px;
   cursor: pointer;
 }
+#viewBtn:hover{
+  background: #5580dd;
+}
+.viewBtn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+#submitBtn {
+  margin: 20px 0;
+  padding: 10px 20px;
+  background: navy;
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+}
+#submitBtn:hover{
+  background: #5580dd;
+}
 button.edit,
 button.delete {
   border: none;

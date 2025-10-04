@@ -5,6 +5,8 @@ const submitBtn = document.getElementById("submitBtn");
 const resultsDiv = document.getElementById("results");
 const overallTotal = document.getElementById("overallTotal");
 const dateInput = document.getElementById("attendanceDate");
+const viewBtn = document.getElementById("viewBtn");
+
 
 let students = [];
 let attendanceRecords = JSON.parse(localStorage.getItem("attendance")) || {};
@@ -81,8 +83,22 @@ function submitAttendance() {
   showResults();
 }
 
+viewBtn.addEventListener("click", () => {
+  if (resultsDiv.style.display === "none" || resultsDiv.style.display === "") {
+    resultsDiv.style.display = "block";
+    viewBtn.value = "Close Results";
+  } else {
+    resultsDiv.style.display = "none";
+    viewBtn.value = "View Results";
+  }
+});
+
+
+
 // Display attendance records
+
 function showResults() {
+
   resultsDiv.innerHTML = "";
   let totalOverall = 0;
 
@@ -109,6 +125,7 @@ function showResults() {
     resultsDiv.appendChild(recordDiv);
     totalOverall += attendanceRecords[date].length;
   }
+  resultsDiv.style.display = "none";
 
   overallTotal.textContent = `Overall Total Students: ${totalOverall}`;
 }
