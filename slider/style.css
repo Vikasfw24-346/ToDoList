@@ -1,0 +1,25 @@
+.scroll-container {
+  height: 300px; /* Set a fixed height for the container */
+  overflow-y: auto; /* Enable vertical scrolling */
+  border: 1px solid #ccc; /* Optional: add border for visibility */
+  padding: 10px; /* Optional: add padding for aesthetic spacing */
+  background-color: #f9f9f9; /* Optional: background color */
+}
+
+.scroll-container::-webkit-scrollbar {
+  width: 8px; /* Set the width of the scrollbar */
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background: #888; /* Set the color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners for the scrollbar thumb */
+}
+
+.scroll-container::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Change color on hover */
+}
+
+/* .scroll-container {
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f9f9f9;
+} */

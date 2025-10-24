@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="navbar">
+                <div class="left-side">
+                    <span><img class="invert" src="/Spotify/svgFile/logo.svg" alt="Spotify Logo" class="logo"></span>
+                    <div class="home-btn">
+                        <span class="home"><img class="invert" src="/Spotify/svgFile/home.svg" alt="home"></span>
+                        <div class="search-bar">
+                            <span><img class="invert" src="/Spotify/svgFile/search.svg" alt="search"></span>
+                            <input type="text" placeholder="What do you want to play?">
+                        </div>
+                    </div>
+                </div>
+                <div class="right-nav">
+                    <ul class="nav-links">
+                        <li><a href="">Premium</a></li>
+                        <li><a href="">Support</a></li>
+                        <li><a href="">Download</a></li>
+                    </ul>
+                    <div class="vertical-line"></div>
+                    <div class="download">
+                        <span><img class="invert" class="download-icon" src="/Spotify/svgFile/download.svg"
+                                alt="download"></span>
+                        <a href="">Install App</a>
+                    </div>
+                    <div class="login-btn">
+                        <button class="sign-up">Sign up</button>
+                        <button class="log-in">Log in</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="left">
+                <ul class="nav-menu">
+                    <li><a href="">Your Library</a></li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="20"
+                            color="#ffffff" fill="none">
+                            <path d="M12 4V20M20 12H4" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg></li>
+                </ul>
+                <div class="playlist-creation">
+                    <div class="playlist-cover">
+                        <div class="playlists">
+                            <p style="font-weight: 700; padding-top: 20px;">Create your first playlist</p>
+                            <p style="margin-top: 10px;">It's easy, we'll help you.</p>
+                            <button class="create-playlist">Create Playlist</button>
+                        </div>
+                        <div class="playlists">
+                            <p style="font-weight: 700; padding-top: 20px;">Let's find some podcasts to follow</p>
+                            <p style="margin-top: 10px;">We'll keep you updated on new episodes.</p>
+                            <button class="create-playlist">Browse Podcasts</button>
+                        </div>
+                    </div>
+                </div>
+                <ul class="podcast-suggestions">
+                    <li><a href="">Legal</a></li>
+                    <li><a href="">Safety & Privacy Center</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Cookies</a></li>
+                    <li><a href="">About Ads</a></li>
+                    <li><a href="">Accessibility</a></li><br>
+                    <li><a href="">Cookies</a></li>
+                </ul>
+                <div class="English">
+                    <img class="invert" src="/Spotify/svgFile/world.svg" alt="world"></li>
+                    <a href="">English</a>
+                    </ul>
+                </div>
+            </div>
+            <div class="right">
+                <div class="spotify-playlists">
+                    <h1>Trending songs</h1>
+                    <div class="cardContainer">
+                        <div class="card">
+                            <div class="play"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                                    height="24" color="#000000" fill="none">
+                                    <path
+                                        d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                                        stroke="#141B34" stroke-width="1.5" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <img src="https://i.scdn.co/image/ab67616d00001e02190828e6f78ff817582026fb" alt="lalu">
+                            <h4>Ranjhea</h4>
+                            <p>Cheema Y, Gur Sidhu</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="playbar">
+                        <div class="songinfo">songinfo</div>
+
+                        <div class="play-bar">
+                            <div class="play-btn">
+                                <span><img id="previous" class="invert" src="/Spotify/svgFile/previous.svg" alt="previous"></span>
+                                <span><img id="play" class="invert" src="/Spotify/svgFile/playbtn.svg" alt="playbtn"></span>
+                                <span><img id="forward" class="invert" src="/Spotify/svgFile/farword.svg" alt="farword"></span>
+                                <div class="seekbar">
+                                    <div class="circle"></div>
+                                </div>
+
+                            </div>
+                            <!-- <div class="seekbar"></div> -->
+                        </div>
+
+                        <div class="songTime">songTime</div>
+                    </div>
+            </div>
+            <div class="play-list">
+                <div class="songList">
+                    <ul>
+
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
